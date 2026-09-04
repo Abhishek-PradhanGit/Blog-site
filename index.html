@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBlog - Latest Stories & Ideas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="#" class="logo">
+                My<span>Blog</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button id="themeBtn" class="theme-btn">
+                🌙
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="small-title">WELCOME TO MY BLOG</p>
+
+                <h1>
+                    Ideas, Stories &
+                    <span>Knowledge</span>
+                </h1>
+
+                <p>
+                    Discover interesting articles, useful tutorials,
+                    technology updates and inspiring stories.
+                </p>
+
+                <a href="#blogs" class="hero-btn">
+                    Explore Blogs →
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="https://i.pinimg.com/originals/8a/a4/e8/8aa4e8264ea6a3370f303c1ea909c5ed.jpg" alt="Blog">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <div class="container">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search blogs..."
+                >
+
+                <button id="searchBtn">
+                    🔍 Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BLOG SECTION ================= -->
+
+    <section class="blogs-section" id="blogs">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="small-title">OUR ARTICLES</p>
+
+                <h2>Latest Blogs</h2>
+
+                <p>
+                    Read our latest articles and learn something new.
+                </p>
+
+            </div>
+
+
+            <!-- CATEGORY BUTTONS -->
+
+            <div class="categories" id="categories">
+
+                <button class="category-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-btn" data-category="technology">
+                    Technology
+                </button>
+
+                <button class="category-btn" data-category="programming">
+                    Programming
+                </button>
+
+                <button class="category-btn" data-category="web">
+                    Web Development
+                </button>
+
+                <button class="category-btn" data-category="career">
+                    Career
+                </button>
+
+            </div>
+
+
+            <!-- BLOG CARDS -->
+
+            <div class="blog-grid" id="blogContainer">
+
+
+                <!-- BLOG 1 -->
+
+                <article class="blog-card" data-category="technology">
+
+                    <img
+                        src="https://wordnest.es/wp-content/uploads/2025/09/Future-Tech.jpeg"
+                        alt="Technology Blog"
+                    >
+
+                    <div class="blog-content">
+
+                        <span class="blog-category">
+                            Technology
+                        </span>
+
+                        <h3>
+                            The Future of Technology
+                        </h3>
+
+                        <p>
+                            Learn how modern technology is changing
+                            the way we live and work.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>
+                                3 Sept 2026
+                            </span>
+
+                            <button class="read-btn">
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BLOG 2 -->
+
+                <article class="blog-card" data-category="programming">
+
+                    <img
+                        src="https://image.winudf.com/v2/image1/N2U4YmY4N2UtZmFjYy0xMWVkLWI4MzQtNTI1NDAwOTZjN2Y5XzE2ODQ5OTkxNzJfMDU2/screen-0.png?fakeurl=1&type=png"
+                        alt="Python Programming"
+                    >
+
+                    <div class="blog-content">
+
+                        <span class="blog-category">
+                            Programming
+                        </span>
+
+                        <h3>
+                            Learn Python from Zero
+                        </h3>
+
+                        <p>
+                            A beginner-friendly guide to start
+                            learning Python programming.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>
+                                2 Sept 2026
+                            </span>
+
+                            <button class="read-btn">
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BLOG 3 -->
+
+                <article class="blog-card" data-category="web">
+
+                    <img
+                        src="https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg"
+                        alt="Web Development"
+                    >
+
+                    <div class="blog-content">
+
+                        <span class="blog-category">
+                            Web Development
+                        </span>
+
+                        <h3>
+                            How to Build a Website
+                        </h3>
+
+                        <p>
+                            Learn the basic technologies required
+                            to create modern websites.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>
+                                1 Sept 2026
+                            </span>
+
+                            <button class="read-btn">
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BLOG 4 -->
+
+                <article class="blog-card" data-category="career">
+
+                    <img
+                        src="https://thumbs.dreamstime.com/z/career-development-chart-hand-drawing-blackboard-56251425.jpg"
+                        alt="Career Growth"
+                    >
+
+                    <div class="blog-content">
+
+                        <span class="blog-category">
+                            Career
+                        </span>
+
+                        <h3>
+                            How to Start Your IT Career
+                        </h3>
+
+                        <p>
+                            Useful tips for students who want to
+                            start a career in the IT industry.
+                        </p>
+
+                        <div class="blog-footer">
+
+                            <span>
+                                30 Aug 2026
+                            </span>
+
+                            <button class="read-btn">
+                                Read More →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="container about-content">
+
+            <div class="about-image">
+
+                <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+                    alt="Author"
+                >
+
+            </div>
+
+            <div class="about-text">
+
+                <p class="small-title">
+                    ABOUT THE BLOG
+                </p>
+
+                <h2>
+                    Learn. Create. Share.
+                </h2>
+
+                <p>
+                    MyBlog is a place where we share useful knowledge,
+                    programming tutorials, technology articles and
+                    career tips.
+                </p>
+
+                <p>
+                    Our goal is to make learning simple and
+                    accessible for everyone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div class="container newsletter-content">
+
+            <h2>
+                Subscribe to Our Newsletter
+            </h2>
+
+            <p>
+                Get the latest blogs directly in your inbox.
+            </p>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="small-title">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Contact Us
+                </h2>
+
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <h2 class="logo">
+                    My<span>Blog</span>
+                </h2>
+
+                <p>
+                    Sharing knowledge one article at a time.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            <p>
+                © 2026 MyBlog. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
